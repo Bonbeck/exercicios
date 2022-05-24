@@ -44,8 +44,6 @@ def series(**kwargs):
 
 series(mr_robot=2015, onisciente=2020, death_love_and_robots=2019, better_than_us=2018, sexify=2021, black_mirror=2011)
 
-#################################################################
-
 def frutas(*args):
     print(args)
     
@@ -62,3 +60,30 @@ def frutas(default="maracujá"):
 
 frutas()
 frutas("kiwi")
+
+#################################################################
+
+f = lambda x: x+1
+print(f(5))
+
+def f(x):
+    return x+1
+print(f(5))
+
+f = lambda x, y: x+y
+print(f(1, 2))
+    
+def f(x, y):
+    return x+y
+print(f(1, 2))
+
+f = lambda fruta: f"eu comi uma {fruta}"
+print(f("maçã"))
+
+def f(fruta):
+    return f"eu comi uma {fruta}"
+print(f("maçã"))
+
+lista = ["caneta", "regua", "lapis", "borracha", "apagador"]
+ordenada = sorted(lista, key=lambda item: item)
+print(ordenada)
