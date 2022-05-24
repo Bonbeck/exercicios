@@ -1,4 +1,3 @@
-"""
 def series():
     return print("Mr Robot")
 
@@ -32,7 +31,6 @@ def series(*args):
 
 #series() # pode não receber parâmetro
 series("mr robot", "onisciente", "death, love & robots", "better than us", "sexify")
-"""
 
 import json
 
@@ -45,3 +43,22 @@ def series(**kwargs):
         json.dump(kwargs, f, indent=2)
 
 series(mr_robot=2015, onisciente=2020, death_love_and_robots=2019, better_than_us=2018, sexify=2021, black_mirror=2011)
+
+#################################################################
+
+def frutas(*args):
+    print(args)
+    
+f = ["banana", "morango", "laranja"]
+frutas(*f)
+
+def frutas(**kwargs):
+    print(kwargs)
+
+frutas(vermelhas=["tomate", "maçã"], citricas=["laranja", "limão"])
+
+def frutas(default="maracujá"):
+    print(default)
+
+frutas()
+frutas("kiwi")
